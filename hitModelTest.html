@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="hitModelTest.css">
+	</head>
+	
+	<body>
+		<!--Target Selection Section-->
+		<div id="targetSelectionSection">
+			<h3>Select Target:</h3>
+			<div id="hitMF" class="modelFrame">
+				<!--Hit Model-->
+				<div class="model hitModel">		
+					<div class="upperModel sectionModel">
+						<div class="headBox boxModel">
+							<div class="HBcontent contentModel">
+								<input type="radio" id="targetHead" name="radioTarget" value="head">
+								<span id="headChance" class="chance">-</span>
+								<label for="targetHead">Head</label>	
+							</div>
+						</div> 
+					</div>
+					
+					<div class="middleModel sectionModel">
+					
+						<div class="torsoBox boxModel">
+							<div class="TBcontent contentModel">
+								<input type="radio" id="targetTorso" name="radioTarget" value="torso">
+								<span id="torsoChance" class="chance">-</span><br>
+								<label for="targetTorso">Torso</label>
+							</div>
+						</div>							
+						
+						<div class="leftArmBox boxModel limbModel">
+							<div class="LABcontent contentModel">
+								<input type="radio" id="targetLeftArm" name="radioTarget" value="leftArm">
+								<span id="leftArmChance" class="chance">-</span>
+								<label for="targetLeftArm">Left Arm</label>
+
+							</div>
+						</div>
+
+						<div class="rightArmBox boxModel limbModel">
+							<div class="RABcontent contentModel">
+								<input type="radio" id="targetRightArm" name="radioTarget" value="rightArm">
+								<span id="rightArmChance" class="chance">-</span>
+								<label for="targetRightArm">Right Arm</label>	
+							</div>
+						</div>
+					</div>
+					
+					<div class="lowerModel sectionModel">
+						<div class="leftLegBox boxModel limbModel">
+							<div class="LLBcontent contentModel">
+								<input type="radio" id="targetLeftLeg" name="radioTarget" value="leftLeg">
+								<span id="leftLegChance" class="chance">-</span>
+								<label for="targetLeftLeg">Left Leg</label>
+							</div>
+						</div>
+						<div class="rightLegBox boxModel limbModel">
+							<div class="RLBcontent contentModel">
+								<input type="radio" id="targetRightLeg" name="radioTarget" value="rightLeg">
+								<span id="rightLegChance" class="chance">-</span>
+								<label for="targetRightLeg">Right Leg</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><br>
+
+		<!-- Character Health Model-->
+		<div id="characterHealthModel">
+			<div id="hpMFP" class="modelFrame">
+				<!--Hit Model-->
+				<div id="hpMP" class="model hpModel">		
+					<div id="headHPBP" class="upperModel sectionModel">
+						<div class="headBox boxModel">
+							<div class="HBcontent contentModel">
+								<span id="headHP" class="HP">-</span>
+							</div>
+						</div> 
+					</div>
+					
+					<div class="middleModel sectionModel">
+					
+						<div id="torsoHPBP" class="torsoBox boxModel">
+							<div class="TBcontent contentModel">
+								<span id="torsoHP" class="HP">-</span>
+							</div>
+						</div>							
+						
+						<div class="leftArmBox boxModel limbModel">
+							<div id="leftArmHPBP" class="LABcontent contentModel">
+								<span id="leftArmHP" class="HP">-</span>
+							</div>
+						</div>
+
+						<div class="rightArmBox boxModel limbModel">
+							<div id="rightArmHPBP" class="RABcontent contentModel">
+								<span id="rightArmHP" class="HP">-</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="lowerModel sectionModel">
+						<div id="leftLegHPBP" class="leftLegBox boxModel limbModel">
+							<div class="LLBcontent contentModel">
+								<span id="leftLegHP" class="HP">-</span>
+							</div>
+						</div>
+						<div id="rightLegHPBP" class="rightLegBox boxModel limbModel">
+							<div class="RLBcontent contentModel">
+								<span id="rightLegHP" class="HP">-</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><br>
+			
+		<input type="button" id="fireButton" value="Fire">		
+		</div>
+	</body>
+</html>

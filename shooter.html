@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="shooter.css">
+		<link rel="stylesheet" href="model.css">
+		<link rel="stylesheet" href="magazine.css">
+	</head>
+	
+	<body>
+		<div id="coinTossBox">
+			<h1 id="turnDisplay">TEST<h1>
+			<h5>will go first.</h5>
+		</div>
+		
+		<div id="page">
+			<!--Battle Log Section-->
+			<div id="logSection">
+				<h3>Battle Log</h3>
+				<div id="log">
+				</div>
+			</div>
+			<!--Character Section-->
+			<div id="characterSection">
+				<!--Player Section-->
+				<div id="playerSection">
+				
+					<h3>Player</h3>
+					<!--Player HP Model-->
+					<div id="playerHealthModel" class="characterHealthModel">
+						<div id="hpMP" class="model hpModel">		
+							<div class="upperModel sectionModel">
+								<div class="boxHead boxHealthP boxModel">
+									<div id="contentHP" class="contentH contentModel">
+										<span id="hpHP" class="hp hpP">-</span>
+									</div>
+								</div> 
+							</div>
+							
+							<div class="middleModel sectionModel">
+								<div class="boxTorso boxHealthP boxModel">
+									<div id="contentTP" class="contentT contentModel">
+										<span id="hpTP" class="hp hpP">-</span>
+									</div>
+								</div>							
+								
+								<div class="boxLeftArm boxHealthP boxModel limbModel">
+									<div id="contentLAP" class="contentLA contentModel">
+										<span id="hpLAP" class="hp hpP">-</span>
+									</div>
+								</div>
+
+								<div class="boxRightArm boxHealthP boxModel limbModel">
+									<div id="contentRAP" class="contentRA contentModel">
+										<span id="hpRAP" class="hp hpP">-</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="lowerModel sectionModel">
+								<div class="boxLeftLeg boxHealthP boxModel limbModel">
+									<div id="content LLP" class="contentLL contentModel">
+										<span id="hpLLP" class="hp hpP">-</span>
+									</div>
+								</div>
+								
+								<div class="boxRightLeg boxHealthP boxModel limbModel">
+									<div id="contentRLP" class="contentRL contentModel">
+										<span id="hpRLP" class="hp hpP">-</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>		
+					
+					<table id="playerTable" class="characterTable">
+						<tr>
+							<th>Name</th>
+							<td id="playerName" class="characterName">-</td>
+						</tr>
+						<tr>
+							<th >Gun</th>
+							<td id="playerGun" class="characterGun">
+								<table id="playerGunTable">
+									<tr>
+										<td colspan="2" id="playerGunName" class="characterGunName">-</td>
+									</tr>
+									<tr>
+										<td >Base Accuracy</td>
+										<td id="playerGunAccuracy" class="characterGunAccuracy">-</td>
+									</tr>
+									<tr>
+										<td >Fire Rate</td>
+										<td id="playerGunFireRate" class="characterGunFireRate">-</td>
+									</tr>
+									<tr>
+										<td >Capacity</td>
+										<td id="playerGunCapacity" class="characterGunCapacity">-</td>
+									</tr>
+								</table>					
+							</td>
+						</tr>
+						<tr>
+							<th>Accuracy</th>
+							<td>
+								<span id="playerAccuracy" class="characterAccuracy">-</span>
+								<span id="playerAccuracyPenalty" class="characterAccuracyPenalty"></span>						
+							</td>
+						</tr>
+					</table>
+					<p id="playerGunLoad" class="gunLoad"></p>
+					<div id="magazineP" class="magazine"></div>		
+				</div>
+			
+				<!--Enemy Section-->
+				<div id="enemySection">
+				
+					<h3>Enemy</h3>
+					<!--Enemy HP Model-->
+					<div id="enemyHealthModel" class="characterHealthModel">
+						<div id="hpME" class="model hpModel">		
+							<div class="upperModel sectionModel">
+								<div class="boxHead boxHealthE boxModel">
+									<div id="contentHE" class="contentH contentModel">
+										<span id="hpHE" class="hpE">-</span>
+									</div>
+								</div> 
+							</div>
+							
+							<div class="middleModel sectionModel">
+							
+								<div class="boxTorso boxHealthE boxModel">
+									<div id="contentTE" class="contentT contentModel">
+										<span id="hpTE" class="hpE">-</span>
+									</div>
+								</div>							
+								
+								<div class="boxLeftArm boxHealthE boxModel limbModel">
+									<div id="contentLAE" class="contentLA contentModel">
+										<span id="hpLAE" class="hpE">-</span>
+									</div>
+								</div>
+
+								<div class="boxRightArm boxHealthE boxModel limbModel">
+									<div id="contentRAE" class="contentRA contentModel">
+										<span id="hpRAE" class="hpE">-</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="lowerModel sectionModel">
+								<div class="boxLeftLeg boxHealthE boxModel limbModel">
+									<div id="contentLLE" class="contentLL contentModel">
+										<span id="hpLLE" class="hpE">-</span>
+									</div>
+								</div>
+								<div class="boxRightLeg boxHealthE boxModel limbModel">
+									<div id="contentRLE" class="contentRL contentModel">
+										<span id="hpRLE" class="hpE">-</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>		
+					
+					<table id="enemyTable" class="characterTable">
+						<tr>
+							<th>Name</th>
+							<td id="enemyName" class="characterName">-</td>
+						</tr>
+						<tr>
+							<th>Gun</th>
+							<td id="enemyGun" class="characterGun">
+								<table id="enemyGunTable">
+									<tr>
+										<td colspan="2" id="enemyGunName" class="characterGunName">-</td>
+									</tr>
+									<tr>
+										<td >Base Accuracy</td>
+										<td id="enemyGunAccuracy" class="characterGunAccuracy">-</td>
+									</tr>
+									<tr>
+										<td >Fire Rate</td>
+										<td id="enemyGunFireRate" class="characterGunFireRate">-</td>
+									</tr>
+									<tr>
+										<td >Capacity</td>
+										<td id="enemyGunCapacity"class="characterGunCapacity">-</td>
+									</tr>
+								</table>					
+							</td>
+						</tr>
+						<tr>
+							<th>Accuracy</th>
+							<td>
+								<span id="enemyAccuracy" class="characterAccuracy">-</span>
+								<span id="enemyAccuracyPenalty" class="characterAccuracyPenalty"></span>
+							</td>
+						</tr>
+					</table>
+					<p id="enemyGunLoad" class="gunLoad"></p>
+					<div id="magazineE" class="magazine"></div>
+				</div>
+			</div>
+		
+
+
+			<!--Action Section-->
+			<div id="actionSection">
+				<h3>Action</h3>
+				<input type="button" id="aimButton" value="Aim"> <br>
+				<input type="button" id="reloadButton" value="Reload">
+			</div>
+			
+			<!--Target Selection Section-->
+
+			<div id="targetSelectionSection">
+				<h3>Select Target:</h3>
+				<div id="hitMF" class="modelFrame">
+					<!--Hit Model-->
+					<div class="model hitModel">		
+						<div class="upperModel sectionModel">
+							<div class="boxHead boxTarget boxModel">
+								<div class="contentH contentModel">
+									<input type="radio" id="radioHead" name="radioTarget" value="head">
+									<span id="chanceHead" class="chance">-</span>
+									<label for="radioHead">Head</label>	
+								</div>
+							</div> 
+						</div>
+						
+						<div class="middleModel sectionModel">
+						
+							<div class="boxTorso boxTarget boxModel">
+								<div class="contentT contentModel">
+									<input type="radio" id="radioTorso" name="radioTarget" value="torso">
+									<span id="chanceTorso" class="chance">-</span><br>
+									<label for="radioTorso">Torso</label>
+								</div>
+							</div>							
+							
+							<div class="boxLeftArm boxTarget boxModel limbModel">
+								<div class="contentLA contentModel">
+									<input type="radio" id="radioLeftArm" name="radioTarget" value="leftArm">
+									<span id="chanceLeftArm" class="chance">-</span>
+									<label for="radioLeftArm">Left Arm</label>
+
+								</div>
+							</div>
+
+							<div class="boxRightArm boxTarget boxModel limbModel">
+								<div class="contentRA contentModel">
+									<input type="radio" id="radioRightArm" name="radioTarget" value="rightArm">
+									<span id="chanceRightArm" class="chance">-</span>
+									<label for="radioRightArm">Right Arm</label>	
+								</div>
+							</div>
+						</div>
+						
+						<div class="lowerModel sectionModel">
+							<div class="boxLeftLeg boxTarget boxModel limbModel">
+								<div class="contentLL contentModel">
+									<input type="radio" id="radioLeftLeg" name="radioTarget" value="leftLeg">
+									<span id="chanceLeftLeg" class="chance">-</span>
+									<label for="radioLeftLeg">Left Leg</label>
+								</div>
+							</div>
+							
+							<div class="boxRightLeg boxTarget boxModel limbModel">
+								<div class="contentRL contentModel">
+									<input type="radio" id="radioRightLeg" name="radioTarget" value="rightLeg">
+									<span id="chanceRightLeg" class="chance">-</span>
+									<label for="radioRightLeg">Right Leg</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<input type="button" id="fireButton" value="Fire">		
+			</div>
+		</div>
+		
+	<script src="ai.js"></script>
+	<script src="shooter.js"></script>
+
+	</body>
+</html>

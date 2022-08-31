@@ -1,0 +1,130 @@
+/*Frame*/
+
+#hitMF {
+	position: static;
+	height: 280px;
+	width: 280px;
+	margin-bottom: 10px;
+	border: thin solid #ccc;
+}
+
+/*Model*/
+
+/*HP*/
+.hpModel {
+	position: relative;
+	left: -30px;
+	height: 150px;
+	width: 150px;
+	/*border: thin solid #ccc;*/
+}
+
+/*Hit*/
+.hitModel {
+	position: absolute;
+	width: 280px;
+	height: 280px;
+
+}
+
+/*General*/
+.boxModel {
+	border: thin solid #ccc;
+	position: absolute;
+	border-radius: 10px;
+}
+
+/*General Model - section horizontal positioning*/
+
+.upperModel > * {
+	top: 5%;
+
+}
+
+.middleModel > * {
+	top: 25%;
+}
+
+.lowerModel > * {
+	top: 65%;
+}
+
+/*General Model - part sizes & vertical positioning*/
+.boxHead {
+	width: 15%;
+	height: 15%;
+	left: 42.5%;
+}
+
+.boxTorso {
+	width: 25%;
+	height: 35%;
+	left: 37.5%;
+
+}
+
+.boxLeftArm {
+	width: 10%;
+	height: 30%;
+	left:22.5%;
+}
+
+.boxRightArm {
+	width: 10%;
+	height: 30%;
+	right: 22.5%;
+}
+
+.boxLeftLeg {
+	width: 10%;
+	height: 30%;
+	left: 37.5%;
+}
+
+.boxRightLeg {
+	width: 10%;
+	height: 30%;
+	right: 37.5%;
+}
+
+/*General content boxes*/
+
+/*all content boxes*/
+.contentModel {
+	position: absolute;
+	
+	line-height: 0.5em;
+	text-align: center;
+}
+
+/*head content box*/
+.contentH {
+	top: 30%;
+	left: 5%;
+}
+
+/*torso content box*/
+.contentT {
+	top: 25%;
+	left:25%;
+}
+
+/*arms and legs content boxes*/
+.limbModel .contentModel {
+	top: 30%;
+	left: 5%;
+}
+
+/*radio buttons,labels,hit percentages*/
+.contentModel > * {
+	position: static;
+	margin: 0px;
+	font-size: 0.6em;
+}
+
+/*radio buttons*/
+[name="radioTarget"] {
+	margin: 0px;
+	width: 1.3em;
+	height: 1.3em;
+}

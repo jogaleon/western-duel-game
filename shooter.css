@@ -1,0 +1,118 @@
+/*Main Sections*/
+body {
+	font-family: Verdana, Arial, sans-serif;
+}
+
+h3 {
+	margin: 10px;
+}
+#page{
+	position: relative;
+	width: 850px;
+	margin-left: auto;	
+	margin-right:auto;
+	opacity: 0;
+	transition: opacity 2s;
+}
+
+#page.fade {
+	opacity: 1;	
+}
+
+#targetSelectionSection {
+	position: relative;
+	left: 10px;
+	display:none;
+}
+
+#characterSection {
+	height:320px;
+}
+#playerSection {
+	position: absolute;
+	left: 10px;
+}
+
+#enemySection {
+	position: absolute;
+	right: 0px;
+}
+
+#actionSection {
+	position: relative;
+	left: 10px;
+}
+
+/*Character*/
+.characterHealthModel {
+	float: left;
+}
+
+.characterTable {
+	position: relative;
+	left: -50px;
+
+}
+
+.characterTable, .characterTable th, .characterTable td {
+	border: thin solid #ccc;
+	border-spacing: 5px;
+}
+
+.characterTable th {
+	text-align: right;
+}
+
+.characterGunName {
+	font-style: italic;
+}
+
+.characterAccuracyPenalty {
+	color: #cc0000;
+	font-size: 0.75em;
+}
+
+/*Battle Log*/
+#logSection {
+	position: absolute;
+	right: 10px;
+	top: 320px;
+}
+
+#log {
+
+	height: 120px;
+	width: 450px;
+	border: 1px solid #ccc;
+	overflow:auto;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+#log > * {
+	line-height: 1;
+	margin: 0;
+}
+
+/*Coin toss box*/
+#coinTossBox {
+	position: relative;
+	top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 283px;
+	background-color: white;
+	border: thin solid #ccc;
+	
+	text-align: center;
+	line-height: 0.5;
+}
+
+#coinTossBox {
+	opacity: 0;
+	transition: opacity 2s;
+}
+
+#coinTossBox.fade {
+	opacity: 1;	
+}

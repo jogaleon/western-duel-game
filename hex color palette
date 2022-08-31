@@ -1,0 +1,10 @@
+Color Palette 
+
+Character Health Model
+
+damaged - #FFFF00 yellow
+almost crippled - #FFA500
+crippled - #f44336 light-ish red
+
+Character Penalty
+accuracyPenalty - #f44336 dark red
